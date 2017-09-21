@@ -1,0 +1,11 @@
+ythweb:
+  image: daocloud.io/nizhuantech/ythweb:master-d0a66de
+  privileged: false
+  restart: always
+  ports:
+  - 9000:9000
+  volumes:
+  - /data/ythweb:/usr/src/app/tmp
+  environment:
+  - PORT=9000
+  - NODE_ENV=production

@@ -1,0 +1,139 @@
+
+body {
+ 	padding: 0;
+ 	margin: 0;
+}
+
+.head {
+	padding-top: 10px;
+}
+
+.wrap{
+	width: 960px;
+ 	margin: 0 auto;
+}
+
+
+.yth-logo{
+	width: 150px;
+	margin: 20px;
+}
+
+.row-Illustration {
+	font-size: 0;
+	padding: 10px 100px;
+}
+
+.illustration {
+	display: inline-block;
+    vertical-align: middle;
+	width: 296px;
+	height: 530px;
+	border:2px solid #aaa;
+}
+
+.title {
+	display: inline-block;
+	text-align: center;
+	width: 460px;
+	margin: 0;
+	font-size: 40px;
+}
+
+
+.top-title{
+	text-align: center;
+	width: 710px;
+	font-size: 60px;
+	color:#50001a;
+
+}
+.applet{
+	font-size: 20px;
+	text-align: right;
+	color: #aaa;
+}
+
+.top-info{
+	width: 770px;
+	float:right;
+}
+
+.experience{
+	width: 960px;
+ 	margin: 0 auto;
+	text-align: center;
+	font-size: 40px;
+	border-bottom: 2px solid #aaa;
+	line-height: 100px;
+	margin-bottom: 30px;
+}
+
+.bottom{
+	width: 960px;
+	margin: 0 auto;
+	font-size: 0;
+}
+
+.qr-code{
+	width: 200px;
+	margin: 20px;
+}
+
+.footer{
+	width: 100%;
+	background-color: #000;
+}
+
+
+.footer-wrap{
+	width: 960px;
+	margin: 0 auto;
+}
+
+.yth-code{
+	display: inline-block;
+	width: 130px;
+	margin: 10px 80px 20px 180px;
+}
+.contact{
+	display: inline-block;
+	font-size: 22px;
+	color: #fff;
+	margin: 50px 0 0;
+	padding: 20px 0;
+	line-height: 50px;
+}
+
+.record{
+	width: 100%;
+	font-size: 20px;
+	color:#fff;
+	text-align: center;
+	border-top: 2px solid #ccc;
+	margin: 0;
+	padding: 20px 0;
+}
+.shop-title {
+	text-align: center;
+}
+.shop-address {
+	text-align: center;
+	color: #aaa;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

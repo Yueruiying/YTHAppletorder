@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <title>樱桃火小程序点餐</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="提供樱桃火小程序的管理包括订单，菜单，打印机，外卖等功能。同时提供数据的时时查看。包括日订单、月订单、客单价等数据的查看。方便管理堂食、外卖、打包等业务。是您使用樱桃火门店助手的得力App">
+    <meta name="keywords" content="樱桃火,点餐小程序,助力门店,微信扫码,扫码点餐,点餐不排队,外卖服务,不走流水不抽成,微信支付">
+    <meta name="author" content="杭州典丰科技有限公司">
+    <link rel="icon" href="https://file.menuxx.com/yth-ico.ico" type="image/icon" >
+    <link rel="stylesheet" type="text/css" href="/bootstrap.min.css">
+    <link rel="stylesheet" href="./main2.css">
+  
+  <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
+  </head>
+  <body>
+    <div id="toimg">
+      <a class="link-img" href="#fiery-investment"><img class="adv-img" src="./image2/13.png" alt="招商图片"></a>
+    </div>
+    <header class="yth-header">
+      <div class="head">
+        <img class="yth-logo" src="./image2/ythLOGO.png">
+        <div class="yth-titles">
+          <span class="yth-line">|</span>
+          <p class="top-title">开店就用樱桃火小程序</p>
+        </div>
+      </div>
+      <div class="yth-tel">
+        <img class="tel-img" src="./image2/1.png">
+        <p class="tel-hotline">全国咨询热线: <span class="tel-num">137 7786 7678</span></p>
+        <div class="online">
+          <a class="online-service" href="javascript:void(0)" onclick="_MEIQIA('showPanel')">在线客服</a>
+        </div>
+          <a href="#fiery-investment"><p class="proxy">代理合作</p></a>
+      </div>
+    </header>
+    <section>
+      <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+          <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+          <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+          <div class="item active">
+            <img src="./image2/banner1.jpg" alt="...">
+          </div>
+          <div class="item">
+            <a href="#fiery-investment">
+              <img src="./image2/banner2.png" alt="...">
+            </a>
+          </div>
+          <div class="item">
+            <img src="./image2/banner3.jpg" alt="...">
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="main">
+      <div class="article">
+        <h3 class="title-one">小程序是什么？</h3>
+        <p class="title-english">What is a small program ?</p>
+        <div class="program-wrap">
+          <img class="zhang-img" src="./image2/zhang.jpeg" alt="">
+          <div class="quote-info">
+            <p class="quote">小程序是一种不需要下载安装即可使用的应用，她实现了应用“触手可及”的梦想，用户扫一扫或搜一下,即可打开应用。也体现了“用完即走”的理念，用户不用关心是否安装了太多应用的问题。应用将无处不在，随时可用，但用无需安装卸载。</p>
+            <h5 class="author">微信创始人 张小龙</h5>
+          </div>
+        </div>
+      </div>
+      <div class="article">
+        <h3 class="title-one">小程序流量入口</h3>
+        <p class="title-english">Small program flow entry</p>
+        <div class="row row-set">
+          <div class="col-md-2">
+            <img class="entrance" src="./image2/扫码.png" alt="...">
+            <p class="prompt">线下扫码</p>
+          </div>
+          <div class="col-md-2">
+            <img class="entrance" src="./image2/搜索.png" alt="...">
+            <p class="prompt">搜索</p>
+            <p class="prompt-desc">（微信首页，发现入口）</p>
+          </div>
+          <div class="col-md-2">
+            <img class="entrance" src="./image2/分享.png" alt="...">
+            <p class="prompt">分享到好友和群</p>
+          </div>
+          <div class="col-md-2">
+            <img class="entrance" src="./image2/关联.png" alt="...">
+            <p class="prompt">与公众号相关联</p>
+          </div>
+          <div class="col-md-2">
+            <img class="entrance" src="./image2/附近.png" alt="...">
+            <p class="prompt">附近的小程序</p>
+          </div>
+          <div class="col-md-2">
+            <img class="entrance" src="./image2/跳转.png" alt="...">
+            <p class="prompt">公众号菜单跳转</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-2">
+            <img class="entrance" src="./image2/文章.png" alt="...">
+            <p class="prompt">公众文章内联</p>
+          </div>
+          <div class="col-md-2">
+            <img class="entrance" src="./image2/二维码.png" alt="...">
+            <p class="prompt">兼容已有的二维码</p>
+          </div>
+          <div class="col-md-2">
+            <img class="entrance" src="./image2/小程序.png" alt="...">
+            <p class="prompt">小程序相互跳转</p>
+          </div>
+          <div class="col-md-2">
+            <img class="entrance" src="./image2/消息.png" alt="...">
+            <p class="prompt">客户消息收发</p>
+          </div>
+          <div class="col-md-2">
+            <img class="entrance" src="./image2/历史.png" alt="...">
+            <p class="prompt">小程序浏览历史</p>
+          </div>
+          <div class="col-md-2">
+            <img class="entrance" src="./image2/付费.png" alt="...">
+            <p class="prompt">付费广告</p>
+          </div>
+        </div>
+      </div>
+      <div class="article">
+        <h3 class="title-one">小程序特点</h3>
+        <p class="title-english">Applet features</p>
+        <div class="features-wrap">
+          <div class="features">
+            <p class="features-num">01</p>
+            <p class="features-en">No download required</p>
+            <p class="features-cn">不需要下载</p>
+          </div>
+          <div class="symbol">
+            <img class="symbol-img" src="./image2/4.png">
+          </div>
+          <div class="features">
+            <p class="features-num">02</p>
+            <p class="features-en">No updates required</p>
+            <p class="features-cn">不需要更新</p>
+          </div>
+          <div class="symbol">
+            <img class="symbol-img" src="./image2/4.png">
+          </div>
+          <div class="features">
+            <p class="features-num">03</p>
+            <p class="features-en">Non consumption</p>
+            <p class="features-cn">不耗流量</p>
+          </div>
+          <div class="symbol">
+            <img class="symbol-img" src="./image2/4.png">
+          </div>
+          <div class="features">
+            <p class="features-num">04</p>
+            <p class="features-en">No cell phone memory</p>
+            <p class="features-cn">不占手机内存</p>
+          </div>
+        </div>
+      </div>
+      <div class="article">
+        <h3 class="title-one">产品逻辑</h3>
+        <p class="title-english">Product logic</p>
+        <div class="product-logic">
+          <div class="logic logic-1">
+            <div class="logic-wrap">
+              <h5 class="logic-title">扫码下单</h5>
+              <p class="logic-en">Safety design</p>
+              <div class="logic-desc">
+                <p class="logic-desc-list">自带桌号</p>
+                <p class="logic-desc-list">堂食</p>
+                <p class="logic-desc-list">打包</p>
+              </div>
+            </div>
+          </div>
+          <div class="logic logic-2">
+            <div class="logic-wrap">
+              <h5 class="logic-title">在线支付</h5>
+              <p class="logic-en">Safety design</p>
+              <div class="logic-desc">
+                <p class="logic-desc-list">零钱支付</p>
+                <p class="logic-desc-list">储蓄卡支付</p>
+                <p class="logic-desc-list">信用卡支付</p>
+              </div>
+            </div>
+          </div>
+          <div class="logic logic-3">
+            <div class="logic-wrap">
+              <h5 class="logic-title">自动打单</h5>
+              <p class="logic-en">Safety design</p>
+              <div class="logic-desc">
+                <p class="logic-desc-list">语音播报</p>
+                <p class="logic-desc-list">云打印机</p>
+                <p class="logic-desc-list">蓝牙打印机</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="article">
+        <h3 class="title-one">产品优势</h3>
+        <p class="title-english">Product advantage</p>
+        <div class="advantage-img">
+          <div class="advantage-num advantage-double">
+            <p>无人收银</p>
+          </div><div class="advantage-num advantage-odd">
+            <p>支持配送</p>
+          </div><div class="advantage-num advantage-double">
+            <p>会员管理</p>
+          </div><div class="advantage-num advantage-odd">
+            <p>营销活动</p>
+          </div><div class="advantage-num advantage-double">
+            <p>单店／多店</p>
+          </div>
+        </div>
+        <div class="video-wrap">
+          <video class="video" src="https://file.menuxx.com/vedio/yingtaohuo.mp4" loop="loop" controls="controls">
+            <p>你的浏览器不支持video标签.</p>
+          </video>
+        </div>
+        <div class="service-wrap">
+          <img class="service-left" src="./image2/111.png" alt="放心管理">
+          <div class="service-right">
+            <h4 class="service-title">保姆式服务让你开店<span class="service-span">更放心</span> </h4>
+            <div class="service-content">
+              <div class="content-title">包申请</div>
+              <img class="content-img" src="./image2/222.png" alt="">
+              <div class="content-title">包开发</div>
+              <img class="content-img" src="./image2/222.png" alt="">
+              <div class="content-title">包上线</div>
+              <img class="content-img" src="./image2/222.png" alt="">
+              <div class="content-title">包运营</div>
+              <img class="content-img" src="./image2/222.png" alt="">
+              <div class="content-title">包效果</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="article">
+        <h3 class="title-one">适用行业</h3>
+        <p class="title-english">Applicable industry</p>
+        <div class="industry-wrap">
+          <div class="industry-img">
+            <div class="industry-num industry-double">
+              <p class="industry-en">ONE</p>
+              <p class="industry-cn">1</p>
+              <p class="industry-type">餐饮</p>
+            </div><div class="industry-num industry-odd">
+              <p class="industry-en">TWO</p>
+              <p class="industry-cn">2</p>
+              <p class="industry-type">零售</p>
+            </div><div class="industry-num industry-double">
+              <p class="industry-en">THREE</p>
+              <p class="industry-cn">3</p>
+              <p class="industry-type">超市</p>
+            </div><div class="industry-num industry-odd">
+              <p class="industry-en">FOUR</p>
+              <p class="industry-cn">4</p>
+              <p class="industry-type">水果</p>
+            </div><div class="industry-num industry-double">
+              <p class="industry-en">FIVE</p>
+              <p class="industry-cn">5</p>
+              <p class="industry-type">鲜花</p>
+            </div><div class="industry-num industry-odd">
+            <p class="industry-en">SIX</p>
+            <p class="industry-cn">6</p>
+            <p class="industry-type">更多</p>
+          </div>
+          </div>
+        </div>
+      </div>
+      <div class="article">
+        <h3 class="title-one">自助体验</h3>
+        <p class="title-english">Self-help experience</p>
+        <div class="experience-wrap">
+          <div class="experience-steps">
+            <div class="experience-step">
+              <p class="experience-num">01</p>
+              <p class="experience-cn">关注「樱桃火门店助手」公众号，回</p>
+              <p class="experience-cn">复「下载」</p>
+            </div><div class="experience-step">
+              <p class="experience-num">02</p>
+              <p class="experience-cn">使用安卓手机打开回复地址安装「樱</p>
+              <p class="experience-cn">桃火」APP</p>
+            </div><div class="experience-step">
+              <p class="experience-num">03</p>
+              <p class="experience-cn">使用测试账号登录「樱桃火」客户端，手机</p>
+              <p class="experience-cn">号：18866669999，验证码：1234</p>
+            </div>
+          </div>
+          <div class="experience-imgs">
+            <img class="experience-img" src="./image2/8.png">
+          </div>
+        </div>
+        <div class="experience-wrap">
+          <div class="experience-steps">
+            <div class="experience-step">
+              <p class="experience-num">04</p>
+              <p class="experience-cn">使用微信扫码或者识别图中带桌号的</p>
+              <p class="experience-cn">二维码进入小程序</p>
+            </div><div class="experience-step">
+              <p class="experience-num">05</p>
+              <p class="experience-cn">左边匪类拉到最底部，选择「凉皮」，下</p>
+              <p class="experience-cn">单价格为1分钱的测试订单</p>
+            </div><div class="experience-step">
+              <p class="experience-num">06</p>
+              <p class="experience-cn">客户端收到并语音播报该订单，如果手机</p>
+              <p class="experience-cn">连接了蓝牙打印机则直接触碰</p>
+            </div>
+          </div>
+          <div class="experience-imgs">
+            <img class="experience-img" src="./image2/9.png">
+          </div>
+        </div>
+      </div>
+      <div  class="article article-case">
+        <h3 class="title-one">案例分析</h3>
+        <p class="title-english">Case appreciation</p>
+        <div class="case-wrap">
+          <div class="case-row clearfix">
+            <div class="case-box">
+              <div class="case-left">
+                <img class="case-img"  src="./image2/case/shangpinbaozaifan.png">
+              </div>
+              <div class="case-right">
+                <h5 class="case-type">餐饮店</h5>
+                <p class="case-info">店名：尚品煲仔饭</p>
+                <p class="case-info">城市：杭州</p>
+                <a class="case-btn" >体验</a>
+              </div>              
+            </div>
+            <div class="case-box">
+              <div class="case-left">
+                <img class="case-img"  src="./image2/case/halixiaoliaoli.png">
+              </div>
+              <div class="case-right">
+                <h5 class="case-type">餐饮店</h5>
+                <p class="case-info">店名：哈利小料理</p>
+                <p class="case-info">城市：杭州</p>
+                <a class="case-btn" >体验</a>
+              </div>              
+            </div>
+            <div class="case-box ">
+              <div class="case-left">
+                <img class="case-img"  src="./image2/case/fuyanghuohongniandai.png">
+              </div>
+              <div class="case-right">
+                <h5 class="case-type">餐饮店</h5>
+                <p class="case-info">店名：富阳火红年代</p>
+                <p class="case-info">城市：杭州-富阳</p>
+                <a class="case-btn" >体验</a>
+              </div>              
+            </div>
+          </div>
+          <div class="case-row clearfix">
+            <div class="case-box">
+              <div class="case-left">
+                <img class="case-img"  src="./image2/case/mokaxiangcun.png">
+              </div>
+              <div class="case-right">
+                <h5 class="case-type">餐饮店</h5>
+                <p class="case-info">店名：莫卡乡村</p>
+                <p class="case-info">城市：杭州</p>
+                <a class="case-btn" >体验</a>
+              </div>              
+            </div>
+            <div class="case-box">
+              <div class="case-left">
+                <img class="case-img"  src="./image2/case/tonghaomalatang.png">
+              </div>
+              <div class="case-right">
+                <h5 class="case-type">餐饮店</h5>
+                <p class="case-info">店名：潼浩麻辣烫</p>
+                <p class="case-info">城市：杭州</p>
+                <a class="case-btn" >体验</a>
+              </div>              
+            </div>
+            <div class="case-box">
+              <div class="case-left">
+                <img class="case-img"  src="./image2/case/zgzdpisa.png">
+              </div>
+              <div class="case-right">
+                <h5 class="case-type">餐饮店</h5>
+                <p class="case-info">店名：芝根芝底披萨</p>
+                <p class="case-info">城市：杭州</p>
+                <a class="case-btn" >体验</a>
+              </div>              
+            </div>
+          </div>
+          <div class="case-row clearfix">
+            <div class="case-box">
+              <div class="case-left">
+                <img class="case-img"  src="./image2/case/miaoxiaomi.png">
+              </div>
+              <div class="case-right">
+                <h5 class="case-type">奶茶店</h5>
+                <p class="case-info">店名：喵小咪</p>
+                <p class="case-info">城市：福州</p>
+                <a class="case-btn" >体验</a>
+              </div>              
+            </div>
+            <div class="case-box">
+              <div class="case-left">
+                <img class="case-img"  src="./image2/case/xiaowanghan.png">
+              </div>
+              <div class="case-right">
+                <h5 class="case-type">餐饮店</h5>
+                <p class="case-info">店名：小汪涵春晗美食店</p>
+                <p class="case-info">城市：杭州</p>
+              </div>
+              <a class="case-btn" >体验</a>           
+            </div>
+            <div class="case-box">
+              <div class="case-left">
+                <img class="case-img"  src="./image2/case/gangdaoquanji.png">
+              </div>
+              <div class="case-right">
+                <h5 class="case-type">餐饮店</h5>
+                <p class="case-info">店名：港岛荃记</p>
+                <p class="case-info">城市：杭州</p>
+                <a class="case-btn" >体验</a>
+              </div>              
+            </div>
+          </div>
+          <div class="case-row clearfix">
+            <div class="case-box">
+              <div class="case-left">
+                <img class="case-img"  src="./image2/case/pinchunchacanting.png">
+              </div>
+              <div class="case-right">
+                <h5 class="case-type">餐饮店</h5>
+                <p class="case-info">店名：品醇茶餐厅</p>
+                <p class="case-info">城市：湖州</p>
+                <a class="case-btn" >体验</a>
+              </div>              
+            </div>
+            <div class="case-box">
+              <div class="case-left">
+                <img class="case-img"  src="./image2/case/guizhouregou.png">
+              </div>
+              <div class="case-right">
+                <h5 class="case-type">超市</h5>
+                <p class="case-info">店名：贵州热购</p>
+                <p class="case-info">城市：贵州</p>
+                <a class="case-btn" >体验</a>
+              </div>              
+            </div>
+            <div class="case-box">
+              <div class="case-left">
+                <img class="case-img"  src="./image2/case/baozupo.png">
+              </div>
+              <div class="case-right">
+                <h5 class="case-type">餐饮店</h5>
+                <p class="case-info">店名：包祖婆</p>
+                <p class="case-info">城市：湖州</p>
+                <a class="case-btn" >体验</a>
+              </div>              
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="fiery-investment" class="article">
+        <h3  class="title-one title-two">小程序免费送，火热招商，全国首家</h3>
+        <div class="investment-wrap">
+          <img class="investment-img"  src="./image2/13.png">
+          <div class="investment-form">
+            <form novalidate class="form-horizontal">
+              <div class="form-group">
+                <label class="col-md-2 control-label"><span class="form-must">*</span>&nbsp;&nbsp;姓名：</label>
+                <div class="col-md-10">
+                  <input id="userName" name="userName" value="" type="text" class="form-control">
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="col-md-2 control-label"><span  class="form-must">*</span>&nbsp;&nbsp;手机：</label>
+                <div class="col-md-10">
+                  <input id="phoneNum" name="phoneNum" value="" type="text" class="form-control">
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="col-md-2 control-label"><span  class="form-must">*</span>&nbsp;&nbsp;公司：</label>
+                <div class="col-md-10">
+                  <input id="company" name="company" value="" type="text" class="form-control">
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="col-md-2 control-label">城市：</label>
+                <div class="col-md-10">
+                  <input id="city" name="city" value="" type="text" class="form-control">
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="col-md-6"></div>
+                <div class="col-md-6">
+                  <a id="submit" name="submit" value="提交" class="btn btn-primary">提交</a>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="article">
+        <h3 class="title-one">联系我们</h3>
+        <p class="title-english">Contact us</p>
+        <div class="footer-wrap">
+          <div class="yth-img-contact">
+            <div class="yth-img">
+              <img class="yth-log" src="./image2/yth-qrcode.jpeg">
+              <img class="yth-log" src="./image2/ythLOGO.png">
+            </div>
+            <div class="yth-info">
+              <p class="yth-contact"><span><img src="./image2/公司.png"></span>&nbsp;&nbsp;公司：杭州典丰科技有限公司</p>
+              <p class="yth-contact"><span><img src="./image2/电话.png"></span>&nbsp;&nbsp;电话：176 8183 4305</p>
+              <p class="yth-contact"><span><img src="./image2/邮箱.png"></span>&nbsp;&nbsp;邮箱：yingtoahuo@yingtaohuo.com</p>
+              <p  class="no-margin"><span><img src="./image2/地址.png"></span>&nbsp;&nbsp;地址：杭州市西湖区文二西路738号</p>
+              <p class="yth-contact">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;西溪乐谷创意园2号楼2楼 腾讯众创空间</p>
+            </div>
+          </div>
+        </div>  
+        <div class="contact-wrap">
+          <p class="contact">Copyright @ 2017 杭州典丰科技有限公司</p>
+          <p class="contact">浙ICP 备 17006410号</p>
+        </div>      
+      </div>
+    </div>
+    <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+    <!-- 存储服务 -->
+    <script src="//cdn1.lncld.net/static/js/3.1.1/av-min.js"></script>
+    <script>
+      var APP_ID = '9PHUpjre5ksGX4WYS8BgWShG-gzGzoHsz';
+      var APP_KEY = 'ocpmoxreHwPeDabWU6aVgmO8';
+
+      AV.init({
+          appId: APP_ID,
+          appKey: APP_KEY
+      });
+
+      var BusinessFeedback = AV.Object.extend('BusinessFeedback');
+
+      var feedback = new BusinessFeedback();
+
+      $('#submit').on('click', function () {
+          var userName = $("#userName").val();
+          var phoneNum = $("#phoneNum").val();
+          var company = $("#company").val();
+          var city = $("#city").val();
+          if( userName === null || userName.length === 0 ){
+              alert("请输入用户名");
+              return
+          }
+
+          if(!(/^1[34578]\d{9}$/.test(phoneNum))){
+              alert("手机号码有误，请重填");
+              return false;
+          }
+
+          if(phoneNum.length !== 11 ){
+              alert("请输入正确的手机号码");
+              return
+          }
+
+          if(company === null || company.length === 0 ){
+              alert("请输入公司名称")
+              return
+          }
+
+          feedback.set("userName", userName);
+          feedback.set("phoneNum", phoneNum);
+          feedback.set("company", company);
+          feedback.set("city", city);
+          feedback.save().then(function(suc) {
+              console.log(suc);
+              alert('提交成功!')
+          }, function (err) {
+              console.log(err);
+              alert("提交失败！")
+          })
+      })
+  </script>
+  <script type="text/javascript" src="/bootstrap.min.js"></script>
+  <script type="text/javascript">
+    $(function () {
+      $('.carousel').carousel({ interval: 4000 })
+
+      $('.case-box .case-btn').on('click', function () {
+        var box = $(this).parents('.case-box')
+        var codeImage = box.find('.wxlite-code')
+        if ( codeImage.length <= 0 ) {
+          var src = box.find('.case-img').attr('src')
+          var ext = src.substring(src.lastIndexOf('.'))
+          var name = src.substring(0, src.lastIndexOf('.'))
+          box.append($('<div class="wxlite-code">' +
+              '<div class="wxlite-code-mark"></div>' +
+              '<img class="wxlite-code-image" src="' + name + '_litecode' + ext + '">' +
+            '</div>'))
+        }
+        codeImage.show()
+      })
+      .on('mouseout', function () {
+        var codeImage = $(this).parents('.case-box').find('.wxlite-code')
+        codeImage.hide()
+      })
+    });
+  </script>
+    <script type='text/javascript'>
+        (function(m, ei, q, i, a, j, s) {
+            m[i] = m[i] || function() {
+                    (m[i].a = m[i].a || []).push(arguments)
+                };
+            j = ei.createElement(q),
+                s = ei.getElementsByTagName(q)[0];
+            j.async = true;
+            j.charset = 'UTF-8';
+            j.src = 'https://static.meiqia.com/dist/meiqia.js?_=t';
+            s.parentNode.insertBefore(j, s);
+        })(window, document, 'script', '_MEIQIA');
+        _MEIQIA('entId', 76604);
+    </script>
+
+
+
+</body>
+</html>

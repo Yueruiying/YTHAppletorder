@@ -1,0 +1,683 @@
+.clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden}
+.clearfix{*+height:1%;}
+
+#toimg{
+	z-index: 9999;
+	position: fixed;
+	text-align: left;
+	right: 0;
+}
+
+.link-img{
+	display: block;
+	width: 130px;
+	height: 111px;
+	float: right;
+}
+
+.adv-img{
+	width: 130px;
+}
+
+
+body {
+ 	padding: 0;
+ 	margin: 0;
+}
+
+.carousel-indicators {
+
+}
+
+.carousel-indicators li {
+	border:1px solid #4d8df6;
+	color: #cccccc;
+}
+
+.article {
+	margin-top: 60px;
+}
+
+.yth-header {
+	width: 960px;
+	margin: 0 auto;
+	height: 60px;
+}
+
+.head {
+	float: left;
+}
+
+.yth-logo {
+	width: 120px;
+	display: block;
+	float: left;
+}
+
+.yth-titles{
+	display:inline-block;
+	margin-top: 22px;
+
+}
+
+.yth-line{
+	color: #999;
+	margin: 0 10px;
+	font-size: 17px;
+
+}
+
+.top-title {
+	display: inline;
+	font-size: 14px;
+	color: #1f81c3;
+}
+
+.yth-tel {
+	float: right;
+	margin-top: 20px;
+}
+
+.tel-img {
+	display: inline;
+	width: 20px;
+}
+
+.tel-hotline {
+	display: inline;
+	font-size: 12px;
+}
+
+.tel-num {
+	display: inline;
+	color: #1f81c3;
+	font-size: 18px;
+	margin-right: 10px; 
+}
+
+.online {
+	display: inline-block;
+	background-color: #5191fd;
+	border-radius: 3px;
+	margin-right:10px;
+
+}
+
+.online-service {
+	display: inline-block;
+	font-size: 16px;
+	padding: 5px 10px;
+	color: #fff;
+}
+
+.proxy {
+	display: inline;
+	color: #5091ff;
+	font-size: 14px;
+}
+
+/*  main部分  */
+
+.main {
+	width: 960px;
+	margin: 0 auto;
+}
+
+.title-one {
+	text-align: center;
+	color: #555;
+}
+
+.title-two {
+	padding-bottom: 30px;
+}
+
+.title-english {
+	text-align: center;
+	color: #aaa;
+}
+
+.program-wrap {
+	width: 960px;
+	height: 180px;
+}
+
+.zhang-img{
+	vertical-align: top;
+	display: inline-block;
+	width: 230px;
+	margin: 0 5px;
+	border: 5px solid #3c74d1;
+
+}
+
+.quote-info{
+	padding-top: 20px;
+	display: inline-block;
+	width: 710px;
+}
+
+.quote{
+	font-size: 15px;
+	line-height: 30px;
+	color: #555;
+	padding: 0 10px 20px;
+}
+
+.author{
+	padding: 0 30px;
+	text-align: right;
+}
+
+
+.row-set{
+	padding: 0;
+	margin: 0;
+}
+
+.entrance{
+	width: 100%
+}
+
+.prompt{
+	text-align: center;
+	font-size: 13px;
+	color: #666;
+}
+
+.prompt-desc{
+	text-align: center;
+	font-size: 12px;
+	color: #999;
+}
+
+.features-wrap {
+ 	display: block;
+ 	height: 123px;
+ 	width: 960px;
+ 	text-align: center;
+}
+
+.features{
+	font-size: 16px;
+	height: 123px;
+	border: 2px solid #a1bff1;
+	border-radius: 6px;
+	width: 165px;
+	display: inline-block;
+	vertical-align: middle;;;
+}
+
+.features-num{
+	font-size: 22px;
+	color: #4d8df6;
+	text-align: center;
+	font-weight: bold;
+	padding: 8px;
+	margin: 0;
+}
+
+.features-en{
+	font-size: 13px;
+	text-align: center;
+	color: #888;
+}
+
+.features-cn{
+	font-size: 13px;
+	text-align: center;
+	color: #555;
+}
+
+.symbol{
+	font-size: 16px;
+	display: inline-block;
+}
+
+.symbol-img{
+	vertical-align: middle;
+
+}
+
+/* product-logic */
+
+.product-logic {
+	display: block;
+	width: 960px;
+	text-align: center;
+}
+
+.logic{
+	width: 290px;
+	background-size: contain;
+	display: inline-block;
+	height: 346px;
+}
+
+.logic-1{
+	background-image: url(./image2/扫码下单.png);
+	background-repeat: no-repeat;
+
+}
+
+.logic-2{
+	background-image: url(./image2/在线支付.png);
+	background-repeat: no-repeat;
+
+}
+
+.logic-3{
+	background-image: url(./image2/自动打单.png);
+	background-repeat: no-repeat;
+
+}
+
+.logic-wrap{
+	padding-top: 120px;
+}
+
+.logic-title{
+	font-size: 26px;
+	color: #333;
+	text-align: center;
+}
+
+.logic-en{
+	font-size: 15px;
+	text-align: center;
+	color: #aaa;
+}
+
+.logic-desc{
+	padding-top: 13px;
+	font-size: 12px;
+	color: #999;
+	text-align: center;
+}
+
+/* advantage-wrap */
+
+.advantage-wrap{
+	width: 960px;
+	background-size: contain;
+	display: inline-block;
+	height: 138px;
+}
+
+.advantage-img{
+	background-image: url(./image2/5.png);
+	background-repeat: no-repeat;
+	width: 960px;
+	background-size: contain;
+	display: inline-block;
+}
+
+.advantage-num{
+	display: inline-block;
+	font-size: 18px;
+	text-align: center;
+	width: 192px;
+	height: 138px;
+	padding-left: 20px;
+	line-height: 110px;
+}
+
+.advantage-double{
+	color: #fff;
+}
+
+.advantage-odd{
+	color: #3971cd;
+
+}
+
+/* video */
+
+
+
+.video-wrap{
+	width: 960px;
+}
+
+
+.video {
+	display: block;
+ 	width: 300px;
+ 	margin: 0 auto;
+}
+
+/* service部分 */
+
+.service-wrap{
+	width: 600px;
+	margin: 0 auto;
+}
+
+.service-left{
+	width: 110px;
+	margin:0 13px;
+	vertical-align: top;
+	display: inline-block;
+}
+
+.service-right{
+	width: 460px;
+	display: inline-block;
+
+}
+
+.service-title{
+	text-align: center;
+
+}
+
+.service-content{
+	text-align: center;
+	padding: 20px 0;
+}
+
+.content-title{
+	display: inline-block;
+
+}
+
+.content-img{
+	display: inline-block;
+	margin: 0 10px;
+
+}
+
+
+
+/* Applicable industry */
+
+.industry-wrap{
+	width: 960px;
+	height: 350px;
+}
+
+.industry-img{
+	background-image: url(./image2/fenlei.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+	height: 350px;
+	text-align: center;
+	width: 860px;
+	margin: 0 auto;
+}
+
+.industry-num{
+	display: inline-block;
+	width: 143px;
+	height: 350px;
+	padding-top: 138px;
+	font-size: 22px;
+
+}
+
+.industry-double{
+	color:#666;
+}
+
+.industry-odd{
+	color: #fff;
+}
+
+
+.industry-type{
+	font-size: 26px;
+	padding-top: 10px;
+}
+
+/* experience */
+
+.experience-steps{
+	width: 960px;
+	height: 80px;
+}
+
+.experience-step{
+	width: 320px;
+	display: inline-block;
+	text-align: center;
+
+}
+
+.experience-num{
+	font-size: 22px;
+	color: #555;
+	font-weight: bold;
+
+}
+
+.experience-cn{
+	font-size: 12px;
+	margin: 0;
+	color: #666;
+}
+
+.experience-wrap{
+
+}
+
+.experience-imgs{
+	width: 960px;
+	height: 450px;
+}
+
+.experience-img{
+ 	width: 850px;
+ 	height: 402px;
+ 	margin: 0 auto;
+ 	display: block;
+ 	margin-top: 20px;
+}
+
+/* Case appreciation
+
+ */
+ .article-case{
+	display: none;
+}
+
+
+
+
+
+.case-wrap{
+	width: 960px;
+}
+
+.case-row {
+
+}
+
+.case-box {
+	position: relative;
+	width: 310px;
+	border: 2px solid #ccc;
+	border-radius: 8px;
+	float: left;
+	padding: 30px 10px;
+	margin-right: 15px;
+	margin-bottom: 15px;
+}
+.case-box:last-child {
+ 	margin-right: 0;
+}
+
+
+.case-left {
+	float: left;
+	margin-right: 20px;
+}
+
+.case-left .case-img {
+	display: block;
+	height: 110px;
+}
+
+.case-right{
+	float: left;
+}
+
+.case-type {
+	font-size: 18px;
+	margin-top: 0px;
+}
+
+.case-info {
+	margin-bottom: 5px;
+	font-size: 14px;
+	color: #888;
+}
+
+.case-btn{
+	position: absolute;
+	bottom: 8px;
+	right: 10px;
+	background-color: #4774cc;
+	padding: 8px 20px;
+	border-radius: 10px;
+	color: #fff;
+	display: inline-block;
+	float: right;
+}
+
+.wxlite-code {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+.wxlite-code-mark {
+	width: 100%;
+	height: 100%;
+	opacity: 0.7;
+	position: absolute;
+	left: 0;
+	top: 0;
+	background-color: #000;
+	z-index: 599;
+	border-radius: 8px;
+}
+
+.wxlite-code-image {
+	height: 90%;
+	z-index: 600;
+	position: absolute;
+	top: 5%;
+	left: 25%;
+	margin: 0 auto;
+	border-radius: 8px;
+}
+
+/* investment */
+
+.investment-wrap{
+	width: 960px;
+
+}
+
+.investment-imgs{
+	display: inline-block;
+	width: 400px;
+	height: 342px;
+
+}
+
+.investment-img{
+ 	width: 380px;
+ 	margin-top: -343px;
+}
+
+.investment-form{
+	display: inline-block;
+	width: 555px;
+
+}
+
+.form-must{
+	color: #f00;
+}
+
+/* footer */
+
+.footer-wrap{
+ 	width: 960px;
+}
+
+.yth{
+	display: inline-block;
+	text-align: center;
+
+}
+
+.yth-img-contact{
+	width: 450px;
+	margin: 0 auto;
+}
+
+.yth-img{
+	vertical-align: top;
+	display: inline-block;
+	margin-right: 10px;
+}
+
+
+.yth-log{
+	width: 120px;
+	display: block;
+}
+
+.yth-info{
+	padding-top: 15px;
+	display: inline-block;
+	width: 305px;
+	margin-left: 10px;
+
+}
+
+.no-margin{
+	margin: 0;
+	font-size: 16px;
+	color: #666;
+
+}
+
+.yth-contact{
+	font-size: 16px;
+	margin-bottom: 10px;
+	color: #666;
+}
+
+.contact-wrap{
+	margin-top: 20px;
+}
+
+.contact{
+	text-align: center;
+	font-size: 12px;
+	color: #aaa;
+	margin: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

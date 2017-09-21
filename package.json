@@ -1,0 +1,19 @@
+{
+  "name": "ythweb",
+  "version": "1.0.0",
+  "description": "樱桃火网站",
+  "main": "index.js",
+  "repository": "https://github.com/menuxx/ythweb.git",
+  "author": "yueruiying@yingtaohuo.com",
+  "license": "MIT",
+  "scripts": {
+    "start": "node launch_dev.js"
+  },
+  "dependencies": {
+    "debug": "^3.0.1",
+    "express": "^4.15.4",
+    "http-proxy": "^1.16.2",
+    "http-proxy-middleware": "^0.17.4",
+    "serve-static": "^1.12.4"
+  }
+}
